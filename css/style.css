@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu:400,700');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Gaegu', cursive;
+    background: #F1F8E9;
+    padding: 0;
+    margin: 0;
+}
+#intro{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+#challenges{
+    margin-top: 100px;
+}
+
+.leftdisplay{
+    float: left;
+}
+
+.rightdisplay{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    color: #01579B;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #5E35B1;
+}
+
+#intro a{
+    color: #EF6C00;
+}
+
+#intro a:hover{
+    color: #5E35B1;
+}
+
+#ps{
+    color: #5E35B1;
+    font-weight: 700;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.quotes {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    top: 30%;
+}
+
+.quotes article {
+    border-bottom: 1px dashed #ddd;
+    text-align: justify;
+    line-height: 1.8;
+    background: #fff;
+    max-width: 620px;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 30px 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 80%;
+    color: #333;
+    box-shadow: 0 20px 100px 10px #ddd;
+}
+
+.quotes article em {
+    font-style: normal;
+    font-size: 0.6em;
+    color: #666;
+}
+
+.quotes p{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5;
+}
+
+.quotes .seq{
+    text-align: center;
+    color: red;
+}
+
+.quotes article em:before {
+    margin: 0 10px;
+}
+
+.rwd-break{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #intro{
+        font-size: 1.2em;
+        padding: 0 0.7em ;
+    }
+    .quotes{
+        top: 35%;
+    }
+    .quotes article {
+        padding: 60px 30px;
+        line-height: 1.5;
+        font-size: 1.4em;
+        box-shadow: 0 20px 90px 10px grey;
+    }
+    .quotes article em {
+        font-size: 0.6em;
+    }
+    .rwd-break{
+        display: block;
+    }   
+}

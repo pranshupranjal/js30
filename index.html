@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS30 challenge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16">
+    </head>
+    <body>
+        <div id="intro">
+            <p>
+                Hello there! <br class="rwd-break">My name is <a href="https://pranshupranjal.me">Pranshu Pranjal</a>.
+                <br>
+                I have taken up <a href="https://twitter.com/wesbos">Wes Bos</a> on his <a href="https://javascript30.com/">#Javasrcipt30</a> challenge.
+                <br><br>
+                <span id="ps">P.S.</span> You may find some of my own additions to the challenge to make it more intereseting.
+            </p>
+        </div>
+        <div id="challenges">
+            <div class="quotes"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="js/foldscroll.js"></script>
+        <script src="js/quotes.js"></script>
+        <script type="text/javascript">
+
+            $(function() {
+                var $container = $( '.quotes' );
+
+                // Populate
+                for ( var i = 0, n = quotes.length; i < n; i++ ) {
+
+                    $container.append(
+                        '<article>' +
+                            '<div class="seq">' + quotes[i].author + '</div>' +
+                            '<p>' + quotes[i].quote + '</p>' +
+                            '<em class="leftdisplay">' + '<a href=``>View Code</a>' + '</em>' +
+                            '<em  class="rightdisplay">' + '<a href=``>Preview</a>' + '</em>' +
+                        '</article>');
+                }
+
+                // Call the foldscroll plugin
+                $container.foldscroll({
+                    perspective: 900,
+                    margin: '220px'
+                });
+            });
+
+        </script>
+    </body>
+</html>
